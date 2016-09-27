@@ -7,5 +7,6 @@ public class test {
     public static void main(String[] args) {
         Thread thread = new Thread(new CaculateOrderChargePrice());
         thread.run();
+        System.out.println("running");
     }
 }
