@@ -10,7 +10,9 @@
     "sprintf-js":"*",
     "dateformat":"1.0.12",
     "uuid":"*",
-    "mysql":"*"
+    "express":"*",
+    "mysql":"*",
+    "md5":"*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
