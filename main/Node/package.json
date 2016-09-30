@@ -1,0 +1,20 @@
+{
+  "name": "runteng_sync",
+  "version": "0.0.1",
+  "description": "runteng sync order from tms",
+  "main": "sync.js",
+  "dependencies":{
+    "redis":"*",
+    "mongoose":"*",
+    "async":"*",
+    "sprintf-js":"*",
+    "dateformat":"1.0.12",
+    "uuid":"*",
+    "mysql":"*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yizhi",
+  "license": "ISC"
+}

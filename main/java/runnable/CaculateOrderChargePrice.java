@@ -36,8 +36,8 @@ public class CaculateOrderChargePrice implements Runnable {
                 pageQuery.setMaxResults(pageSize);
                 List<OrderEntity> pageData = pageQuery.list();
                 pageSession.getTransaction().commit();
-                Thread pageCaculate = new Thread(new pageCalculate(pageData));
-                pageCaculate.run();
+                Thread pageCalculate = new Thread(new pageCalculate(pageData));
+                pageCalculate.run();
             }
 
         } catch (Exception e) {
@@ -133,7 +133,7 @@ public class CaculateOrderChargePrice implements Runnable {
                     session.beginTransaction();
                     order.setChargePrice(new BigDecimal(-1));
                     order.setCostPrice(new BigDecimal(-1));
-                    order.setCalculateMemo("错误");
+                    order.setCalculateMemo("未知错误");
                     session.merge(order);
                     session.getTransaction().commit();
                 }
